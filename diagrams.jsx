@@ -290,6 +290,7 @@ function PhaseHeatmap({ activePhase, setActivePhase }) {
         ))}
       </div>
 
+      <div className="heatmap-scroll">
       <div className="heatmap">
         <div className="hm-cell head"></div>
         {phases.map((p) => (
@@ -323,6 +324,7 @@ function PhaseHeatmap({ activePhase, setActivePhase }) {
             })}
           </React.Fragment>
         ))}
+      </div>
       </div>
 
       {activePhase && (
@@ -513,12 +515,14 @@ function ActionHeatmap() {
         </div>
       </div>
 
+      <div className="heatmap-scroll">
       <div style={{
         display: "grid",
         gridTemplateColumns: "150px repeat(5, 1fr)",
         gap: 0,
         background: "var(--bg-warm)",
         border: "1px solid var(--rule-strong)",
+        minWidth: 720,
       }}>
         {/* Top-left empty corner */}
         <div style={{ ...headBase, cursor: "default" }}></div>
@@ -607,6 +611,7 @@ function ActionHeatmap() {
             })}
           </React.Fragment>
         ))}
+      </div>
       </div>
 
       <p style={{ marginTop: 12, fontSize: 12, color: "var(--ink-muted)", fontFamily: "IBM Plex Mono", letterSpacing: "0.06em" }}>

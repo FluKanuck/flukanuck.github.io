@@ -251,7 +251,7 @@ function SidebarLayout({ view, setView, subRoute, stationStyle }) {
   const s = window.SECTIONS.find((x) => x.id === current);
   const Component = window.SECTION_COMPONENTS[current];
   return (
-    <div className="section-view fade-in" style={{ gridTemplateColumns: "260px 1fr" }}>
+    <div className="section-view sidebar-view fade-in">
       <aside className="sidebar-nav">
         <div className="mono" style={{ fontSize: 10, letterSpacing: "0.2em", color: "var(--ink-muted)", marginBottom: 10 }}>INDEX</div>
         {window.SECTIONS.map((sec) => (

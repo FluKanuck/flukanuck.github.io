@@ -326,7 +326,7 @@ function StationsSection({ stationStyle, subRoute }) {
             Crew dispatch is drag-and-drop. Wolf-pack signals arrive as paper slips on a clipboard,
             colour-coded by importance.
           </p>
-          <div style={{ marginTop: 16 }}>
+          <div className="station-wrap" style={{ marginTop: 16 }}>
             <CaptainStation style={stationStyle}/>
           </div>
         </div>
@@ -347,7 +347,7 @@ function StationsSection({ stationStyle, subRoute }) {
             red ambient, amber GHG, green magic-eye, blue-white ESM. Try the focus toggles in the top
             bar and the S-Gerät arming sequence.
           </p>
-          <div style={{ marginTop: 16 }}>
+          <div className="station-wrap" style={{ marginTop: 16 }}>
             <SonarStation style={stationStyle}/>
           </div>
         </div>
@@ -369,7 +369,7 @@ function StationsSection({ stationStyle, subRoute }) {
             log, magnetic backup, and the M3+ inertial nav readout. Try the rotors (click to advance,
             set them to <code>K·M·F·P</code>) and the cabinet switcher in the top bar.
           </p>
-          <div style={{ marginTop: 16 }}>
+          <div className="station-wrap" style={{ marginTop: 16 }}>
             <NavigatorStation style={stationStyle}/>
           </div>
         </div>
@@ -391,7 +391,7 @@ function StationsSection({ stationStyle, subRoute }) {
             crew sees the boat's state, not just reads it. Try the mode selector and the Stufe
             lever; the viewport reflects each change.
           </p>
-          <div style={{ marginTop: 16 }}>
+          <div className="station-wrap" style={{ marginTop: 16 }}>
             <EngineerStation style={stationStyle}/>
           </div>
         </div>
@@ -416,7 +416,7 @@ function StationsSection({ stationStyle, subRoute }) {
             Headline cross-station moment: the <em>Lauschangriff</em> verbal cascade is captured
             mid-plot.
           </p>
-          <div style={{ marginTop: 16 }}>
+          <div className="station-wrap" style={{ marginTop: 16 }}>
             <TorpedoStation style={stationStyle}/>
           </div>
         </div>
